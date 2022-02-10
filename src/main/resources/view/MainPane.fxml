@@ -1,31 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <AnchorPane prefHeight="75.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <JFXButton buttonType="RAISED" layoutX="52.0" layoutY="46.0" prefHeight="30.0" prefWidth="80.0" ripplerFill="RED" text="Library" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="668.0" AnchorPane.topAnchor="46.0">
-               <padding>
-                  <Insets left="5.0" right="5.0" />
-               </padding>
-            </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="132.0" layoutY="46.0" prefHeight="30.0" prefWidth="80.0" ripplerFill="#006eff" text="Store" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="132.0" AnchorPane.rightAnchor="588.0" AnchorPane.topAnchor="46.0">
-               <padding>
-                  <Insets left="5.0" right="5.0" />
-               </padding>
-            </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="212.0" layoutY="46.0" prefHeight="30.0" prefWidth="80.0" ripplerFill="#00ff62" text="Community" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="212.0" AnchorPane.rightAnchor="508.0" AnchorPane.topAnchor="46.0">
-               <padding>
-                  <Insets left="5.0" right="5.0" />
-               </padding>
-            </JFXButton>
-         </children>
-      </AnchorPane>
+            <JFXButton buttonType="RAISED" layoutX="42.0" layoutY="49.0" prefHeight="25.0" prefWidth="80.0" ripplerFill="#ff3300" text="Store" />
+            <JFXButton buttonType="RAISED" layoutX="125.0" layoutY="49.0" prefHeight="25.0" prefWidth="80.0" ripplerFill="#fff200" text="Library" />
+            <JFXButton buttonType="RAISED" layoutX="222.0" layoutY="49.0" prefHeight="25.0" prefWidth="80.0" ripplerFill="#00ff44" text="Community" />
+            <JFXButton buttonType="RAISED" layoutX="318.0" layoutY="49.0" prefHeight="25.0" prefWidth="80.0" ripplerFill="#0070ff" text="Profile" />
+         </children></AnchorPane>
    </top>
 </BorderPane>
