@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #B5BCBF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #6A6A9D;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
     <top>
-        <AnchorPane prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #B5C0C4;" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #6A65A0;" BorderPane.alignment="CENTER">
             <children>
-                <JFXButton buttonType="RAISED" prefHeight="25.0" prefWidth="200.0" ripplerFill="#ff2f00" text="Store" textFill="WHITE">
+                <JFXButton buttonType="RAISED" prefHeight="25.0" prefWidth="200.0" ripplerFill="#ff000080" text="Store" textFill="WHITE">
                     <font>
                         <Font size="18.0" />
                     </font>
                 </JFXButton>
-                <JFXButton buttonType="RAISED" layoutY="45.0" prefHeight="25.0" prefWidth="200.0" ripplerFill="#ffee00" text="Library" textFill="WHITE">
+                <JFXButton buttonType="RAISED" layoutY="45.0" prefHeight="25.0" prefWidth="200.0" ripplerFill="#ffee0080" text="Library" textFill="WHITE">
                     <font>
                         <Font size="18.0" />
                     </font>
                 </JFXButton>
-                <JFXButton buttonType="RAISED" layoutX="218.0" prefHeight="25.0" prefWidth="200.0" ripplerFill="#00ff44" text="Community" textFill="WHITE">
+                <JFXButton buttonType="RAISED" layoutX="218.0" prefHeight="25.0" prefWidth="200.0" ripplerFill="#00ff4480" text="Community" textFill="WHITE">
                     <font>
                         <Font size="18.0" />
                     </font>
                 </JFXButton>
-                <JFXButton buttonType="RAISED" layoutX="218.0" layoutY="45.0" prefHeight="25.0" prefWidth="200.0" ripplerFill="#0070ff" text="Profile" textFill="WHITE">
+                <JFXButton buttonType="RAISED" layoutX="218.0" layoutY="45.0" prefHeight="25.0" prefWidth="200.0" ripplerFill="#0073ff80" text="Profile" textFill="WHITE">
                     <font>
                         <Font size="18.0" />
                     </font>
@@ -36,13 +38,26 @@
         </AnchorPane>
     </top>
     <left>
-        <VBox prefHeight="516.0" prefWidth="200.0" style="-fx-background-color: #B5C0C4;" BorderPane.alignment="CENTER">
+        <VBox style="-fx-background-color: #6A65A0;" BorderPane.alignment="CENTER">
          <children>
+            <ComboBox prefHeight="25.0" prefWidth="200.0" promptText="Game Filter">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </ComboBox>
             <TextField prefHeight="25.0" prefWidth="170.0" promptText="Serch by Name">
                <VBox.margin>
-                  <Insets top="30.0" />
+                  <Insets top="5.0" />
                </VBox.margin>
             </TextField>
-         </children></VBox>
+            <JFXListView prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </JFXListView>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></VBox>
     </left>
 </BorderPane>
