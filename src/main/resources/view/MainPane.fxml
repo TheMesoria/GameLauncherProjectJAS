@@ -9,98 +9,113 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #242424;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="800.0" style="-fx-background-color: #242424;" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1">
     <top>
-      <HBox BorderPane.alignment="CENTER">
-         <children>
-                <JFXButton buttonType="RAISED" prefHeight="25.0" prefWidth="200.0" text="Store" textFill="SILVER">
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="200.0" text="Store"
+                           textAlignment="CENTER" textFill="SILVER">
                     <font>
-                        <Font size="20.0" />
+                        <Font size="20.0"/>
                     </font>
                     <ripplerFill>
-                        <LinearGradient endX="0.4834123222748815" endY="0.7345971563981043" startX="0.6255924170616114" startY="0.4834123222748815">
+                        <LinearGradient endX="0.4834123222748815" endY="0.7345971563981043" startX="0.6255924170616114"
+                                        startY="0.4834123222748815">
                             <stops>
                                 <Stop>
                                     <color>
-                                        <Color red="0.9868420958518982" green="0.24214181303977966" blue="0.24214181303977966" />
+                                        <Color red="0.9868420958518982" green="0.24214181303977966"
+                                               blue="0.24214181303977966"/>
                                     </color>
                                 </Stop>
                                 <Stop offset="1.0">
                                     <color>
-                                        <Color red="1.0" green="0.550000011920929" />
+                                        <Color red="1.0" green="0.550000011920929"/>
                                     </color>
                                 </Stop>
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
                 </JFXButton>
-                <JFXButton buttonType="RAISED" prefHeight="25.0" prefWidth="200.0" text="Library" textFill="SILVER">
+                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="200.0" text="Library"
+                           textAlignment="CENTER" textFill="SILVER">
                     <font>
-                        <Font size="20.0" />
+                        <Font size="20.0"/>
                     </font>
                     <ripplerFill>
-                        <LinearGradient endX="0.4834123222748815" endY="0.7345971563981043" startX="0.6255924170616114" startY="0.4834123222748815">
+                        <LinearGradient endX="0.4834123222748815" endY="0.7345971563981043" startX="0.6255924170616114"
+                                        startY="0.4834123222748815">
                             <stops>
                                 <Stop>
                                     <color>
-                                        <Color red="0.24500000476837158" green="0.9800000190734863" blue="0.5675539374351501" />
+                                        <Color red="0.24500000476837158" green="0.9800000190734863"
+                                               blue="0.5675539374351501"/>
                                     </color>
                                 </Stop>
                                 <Stop offset="1.0">
                                     <color>
-                                        <Color green="1.0" blue="0.9865707755088806" />
+                                        <Color green="1.0" blue="0.9865707755088806"/>
                                     </color>
                                 </Stop>
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
                 </JFXButton>
-                <JFXButton buttonType="RAISED" prefHeight="25.0" prefWidth="200.0" text="Community" textFill="SILVER">
+                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="200.0" text="Community"
+                           textAlignment="CENTER" textFill="SILVER">
                     <font>
-                        <Font size="20.0" />
+                        <Font size="20.0"/>
                     </font>
                     <ripplerFill>
-                        <LinearGradient endX="0.4834123222748815" endY="0.7345971563981043" startX="0.6255924170616114" startY="0.4834123222748815">
+                        <LinearGradient endX="0.4834123222748815" endY="0.7345971563981043" startX="0.6255924170616114"
+                                        startY="0.4834123222748815">
                             <stops>
                                 <Stop>
                                     <color>
-                                        <Color red="0.7790647745132446" green="0.9800000190734863" blue="0.24500000476837158" />
+                                        <Color red="0.7790647745132446" green="0.9800000190734863"
+                                               blue="0.24500000476837158"/>
                                     </color>
                                 </Stop>
                                 <Stop offset="1.0">
                                     <color>
-                                        <Color red="0.39244604110717773" green="1.0" />
+                                        <Color red="0.39244604110717773" green="1.0"/>
                                     </color>
                                 </Stop>
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
                 </JFXButton>
-                <JFXButton buttonType="RAISED" prefHeight="25.0" prefWidth="200.0" text="Profile" textFill="SILVER">
+                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="200.0" text="Profile"
+                           textAlignment="CENTER" textFill="SILVER">
                     <font>
-                        <Font size="20.0" />
+                        <Font size="20.0"/>
                     </font>
                     <ripplerFill>
-                        <LinearGradient endX="0.4834123222748815" endY="0.7345971563981043" startX="0.6255924170616114" startY="0.4834123222748815">
+                        <LinearGradient endX="0.4834123222748815" endY="0.7345971563981043" startX="0.6255924170616114"
+                                        startY="0.4834123222748815">
                             <stops>
                                 <Stop>
                                     <color>
-                                        <Color red="0.4935251474380493" green="0.24500000476837158" blue="0.9800000190734863" />
+                                        <Color red="0.4935251474380493" green="0.24500000476837158"
+                                               blue="0.9800000190734863"/>
                                     </color>
                                 </Stop>
                                 <Stop offset="1.0">
                                     <color>
-                                        <Color red="0.7995204329490662" blue="1.0" />
+                                        <Color red="0.7995204329490662" blue="1.0"/>
                                     </color>
                                 </Stop>
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
                 </JFXButton>
-         </children>
-      </HBox>
+            </children>
+        </HBox>
     </top>
     <center>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #363636;" BorderPane.alignment="CENTER" />
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #363636;"
+                    BorderPane.alignment="CENTER"/>
     </center>
 </BorderPane>
