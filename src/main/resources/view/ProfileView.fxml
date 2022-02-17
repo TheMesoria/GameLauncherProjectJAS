@@ -2,9 +2,14 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
@@ -23,11 +28,11 @@
             </Label>
             <JFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="150.0" text="Change Name" textFill="SILVER">
                <ripplerFill>
-                  <LinearGradient endX="0.6066350710900474" endY="0.6303317535545023" startX="0.36018957345971564" startY="0.49289099526066354">
+                  <LinearGradient endX="0.22748815165876785" endY="0.3507109004739336" startX="0.919431279620853" startY="0.8151658767772512">
                      <stops>
                         <Stop>
                            <color>
-                              <Color red="0.8920193910598755" green="0.9399999976158142" blue="0.5170000195503235" />
+                              <Color red="0.9052327275276184" green="0.9342105388641357" blue="0.6444322466850281" />
                            </color>
                         </Stop>
                         <Stop offset="1.0">
@@ -42,4 +47,36 @@
          </children>
       </HBox>
    </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #363636;">
+         <children>
+            <TextField promptText="Serch Friend" VBox.vgrow="ALWAYS" />
+            <JFXButton buttonType="RAISED" minHeight="25.0" minWidth="200.0" text="Add Friend" textFill="SILVER" VBox.vgrow="ALWAYS">
+               <ripplerFill>
+                  <LinearGradient endX="0.6966824644549763" endY="0.7298578199052133" startX="0.13744075829383887" startY="0.18009478672985782">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.5179855823516846" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9375654458999634" green="0.9399999976158142" blue="0.770799994468689" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <MenuButton minHeight="25.0" minWidth="200.0" mnemonicParsing="false" text="Friends" VBox.vgrow="ALWAYS">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <ListView prefHeight="425.0" prefWidth="165.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </left>
 </BorderPane>
