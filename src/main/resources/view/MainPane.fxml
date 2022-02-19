@@ -3,37 +3,119 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <Pane prefHeight="768.0" prefWidth="220.0" style="-fx-background-color: #121212;" BorderPane.alignment="CENTER">
          <children>
-            <JFXButton layoutX="55.0" layoutY="50.0" text="Shop" textFill="WHITE">
+            <JFXButton layoutY="50.0" minWidth="220.0" text="Shop" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3868827223777771" green="1.0" blue="0.36574074625968933" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
             </JFXButton>
-            <JFXButton layoutX="45.0" layoutY="101.0" text="Library" textFill="WHITE">
+            <JFXButton layoutY="100.0" minWidth="220.0" text="Library" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
             </JFXButton>
-            <JFXButton layoutX="32.0" layoutY="152.0" text="Inventory" textFill="WHITE">
+            <JFXButton layoutY="150.0" minWidth="220.0" text="Inventory" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
             </JFXButton>
-            <JFXButton layoutX="38.0" layoutY="203.0" text="Account" textFill="WHITE">
+            <JFXButton layoutY="200.0" minWidth="220.0" text="Account" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color green="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
             </JFXButton>
-            <JFXButton layoutY="703.0" prefHeight="51.0" prefWidth="220.0" text="Settings" textFill="WHITE">
+            <JFXButton layoutY="720.0" prefHeight="51.0" prefWidth="220.0" text="Settings" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3868827223777771" green="1.0" blue="0.36574074625968933" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
             </JFXButton>
          </children>
       </Pane>
