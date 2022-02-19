@@ -15,7 +15,6 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
             prefWidth="800.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/17"
             xmlns:fx="http://javafx.com/fxml/1">
@@ -86,8 +85,21 @@
                         <MenuItem mnemonicParsing="false" text="All Friends"/>
                     </items>
                 </MenuButton>
-                <ListView prefHeight="425.0" prefWidth="165.0" VBox.vgrow="ALWAYS"/>
+                <ListView prefHeight="425.0" prefWidth="200.0" VBox.vgrow="ALWAYS"/>
             </children>
         </VBox>
     </left>
+    <right>
+        <VBox prefHeight="500.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuButton mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Games Achievements">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Recent Played"/>
+                        <MenuItem mnemonicParsing="false" text="All Games"/>
+                    </items>
+                </MenuButton>
+                <ListView prefHeight="480.0" prefWidth="200.0" VBox.vgrow="ALWAYS"/>
+            </children>
+        </VBox>
+    </right>
 </BorderPane>
