@@ -18,28 +18,36 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="800.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1">
     <top>
-        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #242424;" BorderPane.alignment="CENTER">
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #242424;"
+              BorderPane.alignment="CENTER">
             <children>
-                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
-                <Label alignment="CENTER" prefHeight="75.0" prefWidth="400.0" text="Profile Name" textAlignment="CENTER" textFill="SILVER">
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true"/>
+                <Label alignment="CENTER" prefHeight="75.0" prefWidth="400.0" text="Profile Name" textAlignment="CENTER"
+                       textFill="SILVER">
                     <font>
-                        <Font size="27.0" />
+                        <Font size="27.0"/>
                     </font>
                 </Label>
-                <JFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="150.0" text="Edit Profile" textFill="SILVER">
+                <JFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="150.0" text="Edit Profile"
+                           textFill="SILVER">
                     <ripplerFill>
-                        <LinearGradient endX="0.22748815165876785" endY="0.3507109004739336" startX="0.919431279620853" startY="0.8151658767772512">
+                        <LinearGradient endX="0.22748815165876785" endY="0.3507109004739336" startX="0.919431279620853"
+                                        startY="0.8151658767772512">
                             <stops>
                                 <Stop>
                                     <color>
-                                        <Color red="0.21176470816135406" green="0.21176470816135406" blue="0.21176470816135406" />
+                                        <Color red="0.21176470816135406" green="0.21176470816135406"
+                                               blue="0.21176470816135406"/>
                                     </color>
                                 </Stop>
                                 <Stop offset="1.0">
                                     <color>
-                                        <Color red="0.2823529541492462" green="0.2823529541492462" blue="0.2823529541492462" />
+                                        <Color red="0.2823529541492462" green="0.2823529541492462"
+                                               blue="0.2823529541492462"/>
                                     </color>
                                 </Stop>
                             </stops>
@@ -52,29 +60,35 @@
     <left>
         <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #363636;">
             <children>
-                <MenuButton minHeight="25.0" minWidth="200.0" mnemonicParsing="false" style="-fx-background-color: #363636;" text="Friends" textFill="SILVER" VBox.vgrow="ALWAYS">
+                <MenuButton minHeight="25.0" minWidth="200.0" mnemonicParsing="false"
+                            style="-fx-background-color: #363636;" text="Friends" textFill="SILVER" VBox.vgrow="ALWAYS">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Active Friends" />
-                        <MenuItem mnemonicParsing="false" text="All Friends" />
+                        <MenuItem mnemonicParsing="false" text="Active Friends"/>
+                        <MenuItem mnemonicParsing="false" text="All Friends"/>
                     </items>
-               <font>
-                  <Font size="15.0" />
-               </font>
+                    <font>
+                        <Font size="15.0"/>
+                    </font>
                 </MenuButton>
-                <ListView prefHeight="425.0" prefWidth="200.0" style="-fx-background-color: #484848;" VBox.vgrow="ALWAYS" />
-                <TextField promptText="Serch Friend" style="-fx-background-color: #484848;" VBox.vgrow="ALWAYS" />
-                <JFXButton buttonType="RAISED" minHeight="25.0" minWidth="200.0" text="Add Friend" textFill="SILVER" VBox.vgrow="ALWAYS">
+                <ListView prefHeight="425.0" prefWidth="200.0" style="-fx-background-color: #484848;"
+                          VBox.vgrow="ALWAYS"/>
+                <TextField promptText="Serch Friend" style="-fx-background-color: #484848;" VBox.vgrow="ALWAYS"/>
+                <JFXButton buttonType="RAISED" minHeight="25.0" minWidth="200.0" text="Add Friend" textFill="SILVER"
+                           VBox.vgrow="ALWAYS">
                     <ripplerFill>
-                        <LinearGradient endX="0.6966824644549763" endY="0.7298578199052133" startX="0.4218009478672986" startY="0.4075829383886256">
+                        <LinearGradient endX="0.6966824644549763" endY="0.7298578199052133" startX="0.4218009478672986"
+                                        startY="0.4075829383886256">
                             <stops>
                                 <Stop>
                                     <color>
-                                        <Color red="0.2823529541492462" green="0.2823529541492462" blue="0.2823529541492462" />
+                                        <Color red="0.2823529541492462" green="0.2823529541492462"
+                                               blue="0.2823529541492462"/>
                                     </color>
                                 </Stop>
                                 <Stop offset="1.0">
                                     <color>
-                                        <Color red="0.3764705955982208" green="0.3764705955982208" blue="0.3764705955982208" />
+                                        <Color red="0.3764705955982208" green="0.3764705955982208"
+                                               blue="0.3764705955982208"/>
                                     </color>
                                 </Stop>
                             </stops>
@@ -87,62 +101,69 @@
     <center>
         <GridPane BorderPane.alignment="CENTER">
             <columnConstraints>
-                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0"/>
             </columnConstraints>
             <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="162.0" minHeight="10.0" prefHeight="114.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="219.0" minHeight="10.0" prefHeight="219.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="162.0" minHeight="10.0" prefHeight="114.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="219.0" minHeight="10.0" prefHeight="219.0" vgrow="SOMETIMES"/>
             </rowConstraints>
             <children>
                 <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
                     <children>
-                        <Label alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #363636;" text="Profile Information" textFill="SILVER" VBox.vgrow="ALWAYS">
+                        <Label alignment="TOP_CENTER" maxWidth="1.7976931348623157E308"
+                               style="-fx-background-color: #363636;" text="Profile Information" textFill="SILVER"
+                               VBox.vgrow="ALWAYS">
                             <font>
-                                <Font size="18.0" />
+                                <Font size="18.0"/>
                             </font>
                         </Label>
                     </children>
                 </VBox>
                 <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
                     <children>
-                        <Label alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #363636;" text="Game Activity" textFill="SILVER">
+                        <Label alignment="TOP_CENTER" maxWidth="1.7976931348623157E308"
+                               style="-fx-background-color: #363636;" text="Game Activity" textFill="SILVER">
                             <font>
-                                <Font size="18.0" />
+                                <Font size="18.0"/>
                             </font>
                         </Label>
                     </children>
                 </VBox>
                 <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
                     <children>
-                        <Label alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #363636;" text="Comment Section" textFill="SILVER">
+                        <Label alignment="TOP_CENTER" maxWidth="1.7976931348623157E308"
+                               style="-fx-background-color: #363636;" text="Comment Section" textFill="SILVER">
                             <font>
-                                <Font size="18.0" />
+                                <Font size="18.0"/>
                             </font>
                         </Label>
-                        <TextField maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="400.0" />
+                        <TextField maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="400.0"/>
                         <JFXButton buttonType="RAISED" text="Add Comment" textFill="SILVER" VBox.vgrow="ALWAYS">
                             <font>
-                                <Font size="16.0" />
+                                <Font size="16.0"/>
                             </font>
                             <ripplerFill>
-                                <LinearGradient endX="0.22748815165876785" endY="0.36966824644549756" startX="0.919431279620853" startY="0.8151658767772512">
+                                <LinearGradient endX="0.22748815165876785" endY="0.36966824644549756"
+                                                startX="0.919431279620853" startY="0.8151658767772512">
                                     <stops>
                                         <Stop>
                                             <color>
-                                                <Color red="0.641700029373169" green="0.9239851236343384" blue="0.9300000071525574" />
+                                                <Color red="0.641700029373169" green="0.9239851236343384"
+                                                       blue="0.9300000071525574"/>
                                             </color>
                                         </Stop>
                                         <Stop offset="1.0">
                                             <color>
-                                                <Color red="0.4277999997138977" green="0.7750044465065002" blue="0.9300000071525574" />
+                                                <Color red="0.4277999997138977" green="0.7750044465065002"
+                                                       blue="0.9300000071525574"/>
                                             </color>
                                         </Stop>
                                     </stops>
                                 </LinearGradient>
                             </ripplerFill>
                         </JFXButton>
-                        <ListView prefHeight="200.0" prefWidth="200.0" />
+                        <ListView prefHeight="200.0" prefWidth="200.0"/>
                     </children>
                 </VBox>
             </children>
