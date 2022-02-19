@@ -1,0 +1,9 @@
+.root {
+    -fx-background-color: -fx-color-background;
+    -fx-text-fill: -fx-text-color;
+}
+
+.list-view {
+    -fx-background-color: -fx-color-background;
+    -fx-text-fill: -fx-text-color;
+}

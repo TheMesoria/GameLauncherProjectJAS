@@ -111,6 +111,7 @@
                                 <Font size="18.0" />
                             </font>
                         </Label>
+                  <ListView prefHeight="425.0" prefWidth="200.0" style="-fx-background-color: #484848;" />
                     </children>
                 </VBox>
                 <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
