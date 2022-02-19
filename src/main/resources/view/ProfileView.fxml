@@ -29,7 +29,8 @@
                         <Font size="27.0"/>
                     </font>
                 </Label>
-                <JFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="150.0" text="Change Name" textFill="SILVER">
+                <JFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="150.0" text="Edit Profile"
+                           textFill="SILVER">
                     <ripplerFill>
                         <LinearGradient endX="0.22748815165876785" endY="0.3507109004739336" startX="0.919431279620853"
                                         startY="0.8151658767772512">
