@@ -106,31 +106,31 @@
             </children>
         </HBox>
     </top>
-    <center>
-      <HBox alignment="CENTER" prefHeight="558.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="266.0" HBox.hgrow="ALWAYS">
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="185.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                <children>
-                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #727272;" VBox.vgrow="ALWAYS" />
-                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #727272;" HBox.hgrow="ALWAYS" />
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
                </children>
-            </VBox>
-            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="266.0" HBox.hgrow="ALWAYS">
+            </HBox>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="185.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                <children>
-                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #727272;" VBox.vgrow="ALWAYS" />
-                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #727272;" VBox.vgrow="ALWAYS" />
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #727272;" HBox.hgrow="ALWAYS" />
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #727272;" HBox.hgrow="ALWAYS" />
                </children>
-            </VBox>
-            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="266.0" HBox.hgrow="ALWAYS">
+            </HBox>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="185.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
                <children>
-                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #727272;" VBox.vgrow="ALWAYS" />
-                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #727272;" HBox.hgrow="ALWAYS" />
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
                </children>
-            </VBox>
+            </HBox>
          </children>
-      </HBox>
-    </center>
+      </VBox>
+   </center>
 </BorderPane>
