@@ -5,6 +5,7 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -86,12 +87,18 @@
          <children>
             <BorderPane minHeight="200.0">
                <top>
-                  <Label alignment="CENTER" minHeight="31.0" minWidth="600.0" style="-fx-background-color: #363636;" text="Profile Information" textFill="SILVER" BorderPane.alignment="CENTER">
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="31.0" minWidth="600.0" style="-fx-background-color: #363636;" text="Profile Information" textFill="SILVER" BorderPane.alignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
                </top>
+               <left>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </left>
+               <center>
+                  <TextArea style="-fx-background-color: #484848;" BorderPane.alignment="CENTER" />
+               </center>
             </BorderPane>
             <BorderPane minHeight="200.0" />
             <BorderPane minHeight="200.0" />
