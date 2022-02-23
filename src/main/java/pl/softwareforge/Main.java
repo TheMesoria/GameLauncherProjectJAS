@@ -12,10 +12,13 @@ public class Main
     @Override
     public void start( Stage primaryStage ) throws Exception
     {
-        var fxmlLoader = new FXMLLoader( getClass().getResource( "/view/ProfileView.fxml" ) );
+        var fxmlLoader = new FXMLLoader( getClass().getResource( "/view/MainPane.fxml" ) );
 
         Parent root = fxmlLoader.load();
         var scene = new Scene( root );
+
+        scene.getStylesheets().add( "/css/SimpleStyling.css" );
+
         primaryStage.setScene( scene );
         primaryStage.show();
     }
