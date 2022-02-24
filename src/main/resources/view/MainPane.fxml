@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -13,7 +14,7 @@
     <top>
         <HBox alignment="CENTER" BorderPane.alignment="CENTER">
             <children>
-                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="187.5" text="Store" textAlignment="CENTER" textFill="SILVER">
+                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="150.0" text="Store" textAlignment="CENTER" textFill="SILVER">
                     <font>
                         <Font size="20.0" />
                     </font>
@@ -33,8 +34,11 @@
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
                 </JFXButton>
-                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="187.5" text="Library" textAlignment="CENTER" textFill="SILVER">
+                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="150.0" text="Library" textAlignment="CENTER" textFill="SILVER">
                     <font>
                         <Font size="20.0" />
                     </font>
@@ -54,8 +58,11 @@
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
                 </JFXButton>
-                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="187.5" text="Community" textAlignment="CENTER" textFill="SILVER">
+                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="150.0" text="Community" textAlignment="CENTER" textFill="SILVER">
                     <font>
                         <Font size="20.0" />
                     </font>
@@ -80,8 +87,11 @@
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
                 </JFXButton>
-                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="187.5" text="Profile" textAlignment="CENTER" textFill="SILVER">
+                <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="25.0" prefWidth="150.0" text="Profile" textAlignment="CENTER" textFill="SILVER">
                     <font>
                         <Font size="20.0" />
                     </font>
@@ -101,8 +111,14 @@
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
                 </JFXButton>
-                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin></ImageView>
             </children>
         </HBox>
     </top>

@@ -1,3 +1,7 @@
-{
+.root{
 -fx-background-color: #242424
+}
+
+HBox{
+-fx-background-color: #121212
 }
