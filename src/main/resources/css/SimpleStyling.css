@@ -8,7 +8,7 @@ HBox{
 
 }
 
-.jfx-button{
+#storeButton{
 -fx-button-type: RAISED;
 -fx-font-size: 20px;
 -fx-text-fill: SILVER;
@@ -16,3 +16,31 @@ HBox{
 -fx-pref-height: 25;
 -fx-pref-width: 150;
 }
+
+#libraryButton{
+-fx-button-type: RAISED;
+-fx-font-size: 20px;
+-fx-text-fill: SILVER;
+-fx-alignment: CENTER;
+-fx-pref-height: 25;
+-fx-pref-width: 150;
+}
+
+#communityButton{
+-fx-button-type: RAISED;
+-fx-font-size: 20px;
+-fx-text-fill: SILVER;
+-fx-alignment: CENTER;
+-fx-pref-height: 25;
+-fx-pref-width: 150;
+}
+
+#profileButton{
+-fx-button-type: RAISED;
+-fx-font-size: 20px;
+-fx-text-fill: SILVER;
+-fx-alignment: CENTER;
+-fx-pref-height: 25;
+-fx-pref-width: 150;
+}
+
