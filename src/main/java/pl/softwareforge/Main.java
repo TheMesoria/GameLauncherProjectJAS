@@ -17,7 +17,7 @@ public class Main
         Parent root = fxmlLoader.load();
         var scene = new Scene( root );
 
-        scene.getStylesheets().add( "/css/SimpleStyling.css" );
+        scene.getStylesheets().add("/css/SimpleStyling.css");
 
         primaryStage.setScene( scene );
         primaryStage.show();

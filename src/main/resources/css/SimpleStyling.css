@@ -1,7 +1,18 @@
 .root{
--fx-background-color: #242424
+-fx-background-color: #242424;
 }
 
 HBox{
--fx-background-color: #121212
+-fx-background-color: #121212;
+-fx-alignment: CENTER;
+
+}
+
+.jfx-button{
+-fx-button-type: RAISED;
+-fx-font-size: 20px;
+-fx-text-fill: SILVER;
+-fx-alignment: CENTER;
+-fx-pref-height: 25;
+-fx-pref-width: 150;
 }
