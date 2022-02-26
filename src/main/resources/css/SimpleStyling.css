@@ -1,7 +1,7 @@
 
 -MainPane-
 
-.root{
+#mainBorderPane{
 -fx-background-color: #242424;
 }
 
@@ -48,8 +48,12 @@
 
 -ProfileView-
 
+-Top bar-
+
 #profileBorderPane{
 -fx-background-color: #363636;
+-fx-pref-height: 700;
+-fx-pref-width: 800;
 }
 
 #profileHBox{
@@ -69,6 +73,7 @@
 
 #editProfileButton{
 -fx-font-size: 16px;
+-fx-text-fill: SILVER;
 -fx-pref-height: 50;
 -fx-pref-width: 100;
 }
@@ -77,3 +82,55 @@
 -fx-pref-width: 100;
 -fx-pref-height: 100;
 }
+
+-Friends section -
+
+#friendsMenuButton{
+-fx-background-color: #363636;
+-fx-text:;
+-fx-font-size: 15px;
+-fx-text-fill: SILVER;
+-fx-pref-height: 25;
+-fx-pref-width: 200;
+-fx-max-width: MAX_VALUE;
+-fx-max-height: fx-pref-height;
+}
+
+#friendsVBox{
+-fx-alignment: CENTER;
+-fx-pref-height: 500;
+-fx-pref-width: 200;
+-fx-background-color: #363636;
+-fx-max-width: fx-pref-width;
+-fx-max-height: MAX_VALUE;
+}
+
+#friendsListView{
+-fx-background-color: #484848;
+-fx-pref-width: 200;
+-fx-pref-height: 425;
+-fx-max-width: fx-pref-width;
+-fx-max-height: MAX_VALUE;
+}
+
+#searchFriendsTextField{
+-fx-background-color: #484848;
+-fx-pref-width: 200;
+-fx-pref-height: 25;
+-fx-prompt-text:;
+-fx-prompt-text-fill: SILVER;
+-fx-text-fill: SILVER;
+}
+
+#addFiendsButton{
+-fx-button-type: RAISED;
+-fx-background-color: #242424;
+-fx-pref-width: 200;
+-fx-pref-height: 25;
+-fx-max-width: MAX_VALUE;
+-fx-max-height: fx-pref-height;
+-fx-text-fill: SILVER;
+-fx-font-size: 12px;
+-fx-text:;
+}
+
