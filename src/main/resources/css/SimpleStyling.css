@@ -90,7 +90,7 @@
 -fx-text:;
 -fx-font-size: 15px;
 -fx-text-fill: SILVER;
--fx-pref-height: 25;
+-fx-pref-height: 31;
 -fx-pref-width: 200;
 -fx-max-width: MAX_VALUE;
 -fx-max-height: fx-pref-height;
@@ -132,5 +132,48 @@
 -fx-text-fill: SILVER;
 -fx-font-size: 12px;
 -fx-text:;
+}
+
+-Center section-
+
+.label{
+-fx-background-color: #363636;
+-fx-alignment: CENTER;
+-fx-font: 18px;
+-fx-text-fill: SILVER;
+-fx-pref-width: 600;
+-fx-pref-height: 31;
+-fx-max-width: MAX_VALUE;
+-fx-max-height: fx-pref-height;
+}
+
+-Profile Information-
+
+#profileInfoTextArea{
+-fx-background-color: #484848;
+-fx-pref-width: 478;
+-fx-pref-height: 183;
+-fx-max-width: MAX_VALUE;
+-fx-max-height: MAX_VALUE;
+}
+
+-Game Activity-
+
+#firstGameActivityPane{
+-fx-pref-width: 200;
+-fx-pref-height: 200;
+-fx-background-color: #606060;
+}
+
+secondGameActivityPane{
+-fx-pref-width: 200;
+-fx-pref-height: 200;
+-fx-background-color: #606060;
+}
+
+thirdGameActivityPane{
+-fx-pref-width: 200;
+-fx-pref-height: 200;
+-fx-background-color: #606060;
 }
 
