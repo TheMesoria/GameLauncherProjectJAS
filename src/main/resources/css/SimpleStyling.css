@@ -177,3 +177,34 @@ thirdGameActivityPane{
 -fx-background-color: #606060;
 }
 
+-Comment Section-
+
+#commentTextArea{
+-fx-background-color: #484848;
+-fx-font-size: 12px;
+-fx-text-fill: SILVER;
+-fx-pref-width: 600;
+-fx-pref-height: 150;
+-fx-max-width: MAX_VALUE;
+-fx-max-height: MAX_VALUE;
+}
+
+#commentTextField{
+-fx-background-color: #484848;
+-fx-text-fill: SILVER;
+-fx-pref-width: 600;
+-fx-pref-height:25;
+-fx-max-width: MAX_VALUE;
+-fx-max-height: fx-pref-height;
+}
+
+#addCommentButton{
+-fx-button-type: RAISED;
+-fx-background-color: #242424;
+-fx-pref-width: 200;
+-fx-pref-height: 25;
+-fx-max-width: MAX_VALUE;
+-fx-max-height: fx-pref-height;
+-fx-text-fill: SILVER;
+-fx-font-size: 12px;
+}
