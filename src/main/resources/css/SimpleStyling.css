@@ -1,5 +1,5 @@
 
--MainPane-
+
 
 #mainBorderPane{
 -fx-background-color: #242424;
@@ -46,9 +46,7 @@
 -fx-pref-width: 150;
 }
 
--ProfileView-
 
--Top bar-
 
 #profileBorderPane{
 -fx-background-color: #363636;
@@ -83,11 +81,11 @@
 -fx-pref-height: 100;
 }
 
--Friends section -
+
 
 #friendsMenuButton{
 -fx-background-color: #363636;
--fx-text:;
+
 -fx-font-size: 15px;
 -fx-text-fill: SILVER;
 -fx-pref-height: 31;
@@ -117,7 +115,7 @@
 -fx-background-color: #484848;
 -fx-pref-width: 200;
 -fx-pref-height: 25;
--fx-prompt-text:;
+
 -fx-prompt-text-fill: SILVER;
 -fx-text-fill: SILVER;
 }
@@ -131,33 +129,31 @@
 -fx-max-height: fx-pref-height;
 -fx-text-fill: SILVER;
 -fx-font-size: 12px;
--fx-text:;
+
 }
 
--Center section-
+
 
 .label{
 -fx-background-color: #363636;
 -fx-alignment: CENTER;
--fx-font: 18px;
+-fx-font-size: 18px;
 -fx-text-fill: SILVER;
 -fx-pref-width: 600;
 -fx-pref-height: 31;
--fx-max-width: MAX_VALUE;
--fx-max-height: fx-pref-height;
+
 }
 
--Profile Information-
+
 
 #profileInfoTextArea{
 -fx-background-color: #484848;
 -fx-pref-width: 478;
 -fx-pref-height: 183;
--fx-max-width: MAX_VALUE;
--fx-max-height: MAX_VALUE;
+
 }
 
--Game Activity-
+
 
 #firstGameActivityPane{
 -fx-pref-width: 200;
@@ -177,7 +173,6 @@ thirdGameActivityPane{
 -fx-background-color: #606060;
 }
 
--Comment Section-
 
 #commentTextArea{
 -fx-background-color: #484848;
@@ -185,8 +180,7 @@ thirdGameActivityPane{
 -fx-text-fill: SILVER;
 -fx-pref-width: 600;
 -fx-pref-height: 150;
--fx-max-width: MAX_VALUE;
--fx-max-height: MAX_VALUE;
+
 }
 
 #commentTextField{
@@ -194,8 +188,7 @@ thirdGameActivityPane{
 -fx-text-fill: SILVER;
 -fx-pref-width: 600;
 -fx-pref-height:25;
--fx-max-width: MAX_VALUE;
--fx-max-height: fx-pref-height;
+
 }
 
 #addCommentButton{

@@ -15,24 +15,16 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
-<?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
-            prefWidth="800.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/17"
-            xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="profileBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
     <top>
-        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #242424;"
-              BorderPane.alignment="CENTER">
+        <HBox fx:id="profileHBox" BorderPane.alignment="CENTER">
             <children>
-                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true"/>
-                <Label alignment="CENTER" prefHeight="75.0" prefWidth="400.0" text="Profile Name" textAlignment="CENTER"
-                       textFill="SILVER">
-                    <font>
-                        <Font size="27.0"/>
-                    </font>
-                </Label>
-                <JFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="150.0" text="Edit Profile"
-                           textFill="SILVER">
+                <ImageView fx:id="profileImage" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true"
+                           preserveRatio="true"/>
+                <Label fx:id="profileLabel" alignment="CENTER" text="Profile Name" textAlignment="CENTER"/>
+                <JFXButton fx:id="editProfileButton" text="Edit Profile">
                     <ripplerFill>
                         <LinearGradient endX="0.22748815165876785" endY="0.3507109004739336" startX="0.919431279620853"
                                         startY="0.8151658767772512">
@@ -57,24 +49,17 @@
         </HBox>
     </top>
     <left>
-        <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #363636;">
+        <VBox fx:id="friendsVBox">
             <children>
-                <MenuButton maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
-                            prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #363636;" text="Friends"
-                            textFill="SILVER" VBox.vgrow="ALWAYS">
+                <MenuButton fx:id="friendsMenuButton" mnemonicParsing="false" text="Friends" VBox.vgrow="ALWAYS">
                     <items>
                         <MenuItem mnemonicParsing="false" text="Active Friends"/>
                         <MenuItem mnemonicParsing="false" text="All Friends"/>
                     </items>
-                    <font>
-                        <Font size="15.0"/>
-                    </font>
                 </MenuButton>
-                <ListView prefHeight="425.0" prefWidth="200.0" style="-fx-background-color: #484848;"
-                          VBox.vgrow="ALWAYS"/>
-                <TextField promptText="Serch Friend" style="-fx-background-color: #484848;" VBox.vgrow="ALWAYS"/>
-                <JFXButton buttonType="RAISED" minHeight="25.0" minWidth="200.0" text="Add Friend" textFill="SILVER"
-                           VBox.vgrow="ALWAYS">
+                <ListView fx:id="friendsListView" VBox.vgrow="ALWAYS"/>
+                <TextField fx:id="searchFriendsTextField" promptText="Search Friends" VBox.vgrow="ALWAYS"/>
+                <JFXButton fx:id="addFriendButton" text="Add Friend" VBox.vgrow="ALWAYS">
                     <ripplerFill>
                         <LinearGradient endX="0.6966824644549763" endY="0.7298578199052133" startX="0.4218009478672986"
                                         startY="0.4075829383886256">
@@ -99,68 +84,48 @@
         </VBox>
     </left>
     <center>
-        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+        <VBox fx:id="centerVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              BorderPane.alignment="CENTER">
             <children>
-                <BorderPane minHeight="200.0">
+                <BorderPane fx:id="profileInfoBorderPane">
                     <top>
-                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="31.0" minWidth="600.0"
-                               style="-fx-background-color: #363636;" text="Profile Information" textFill="SILVER"
-                               BorderPane.alignment="CENTER">
-                            <font>
-                                <Font size="18.0"/>
-                            </font>
-                        </Label>
+                        <Label fx:id="profileInfoLabel" text="Profile Information" BorderPane.alignment="CENTER"/>
                     </top>
                     <left>
-                        <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true"
-                                   BorderPane.alignment="CENTER"/>
+                        <ImageView fx:id="profileInfoImage" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true"
+                                   preserveRatio="true" BorderPane.alignment="CENTER"/>
                     </left>
                     <center>
-                        <TextArea style="-fx-background-color: #484848;" BorderPane.alignment="CENTER"/>
+                        <TextArea fx:id="profileInfoTextArea" BorderPane.alignment="CENTER"/>
                     </center>
                 </BorderPane>
-                <BorderPane minHeight="200.0">
+                <BorderPane fx:id="gameActivityBorderPane" minHeight="200.0">
                     <top>
-                        <Label alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" minHeight="31.0"
-                               style="-fx-background-color: #363636;" text="Game Activity" textFill="SILVER"
-                               BorderPane.alignment="CENTER">
-                            <font>
-                                <Font size="18.0"/>
-                            </font>
-                        </Label>
+                        <Label fx:id="gameActivityLabel" text="Game Activity" BorderPane.alignment="CENTER"/>
                     </top>
                     <center>
-                        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-                              BorderPane.alignment="CENTER">
+                        <HBox fx:id="gameActivityHBox" maxHeight="1.7976931348623157E308"
+                              maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
                             <children>
-                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-                                      prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
-                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-                                      prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
-                                <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-                                      prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+                                <Pane fx:id="firstGameActivityPane" HBox.hgrow="ALWAYS"/>
+                                <Pane fx:id="secondGameActivityPane" HBox.hgrow="ALWAYS"/>
+                                <Pane fx:id="thirdGameActivityPane" HBox.hgrow="ALWAYS"/>
                             </children>
                         </HBox>
                     </center>
                 </BorderPane>
-                <BorderPane maxHeight="1.7976931348623157E308">
+                <BorderPane fx:id="commentBorderPane" maxHeight="1.7976931348623157E308">
                     <top>
-                        <Label alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308"
-                               prefHeight="31.0" style="-fx-background-color: #363636;" text="Comment Section"
-                               textFill="SILVER" BorderPane.alignment="CENTER">
-                            <font>
-                                <Font size="18.0"/>
-                            </font>
-                        </Label>
+                        <Label fx:id="commentLabel" text="Comment Section" BorderPane.alignment="CENTER"/>
                     </top>
                     <center>
-                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                        <VBox fx:id="commentVBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0"
+                              BorderPane.alignment="CENTER">
                             <children>
-                                <TextArea maxHeight="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0"
-                                          style="-fx-background-color: #484848;" VBox.vgrow="ALWAYS"/>
-                                <TextField style="-fx-background-color: #484848;" VBox.vgrow="ALWAYS"/>
-                                <JFXButton buttonType="RAISED" prefWidth="200.0" style="-fx-background-color: #363636;"
-                                           text="Add Comment" textFill="SILVER">
+                                <TextArea fx:id="commentTextArea" style="-fx-background-color: #484848;"
+                                          VBox.vgrow="ALWAYS"/>
+                                <TextField fx:id="commentTextField" VBox.vgrow="ALWAYS"/>
+                                <JFXButton fx:id="addCommentButton" text="Add Comment">
                                     <ripplerFill>
                                         <LinearGradient endX="0.6729857819905214" endY="0.4454976303317535"
                                                         startX="0.5213270142180095" startY="0.33649289099526064">
