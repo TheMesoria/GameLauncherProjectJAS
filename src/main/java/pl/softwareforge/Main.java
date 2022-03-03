@@ -16,6 +16,7 @@ public class Main
 
         Parent root = fxmlLoader.load();
         var scene = new Scene( root );
+        scene.getStylesheets().add("/view/style.css");
         primaryStage.setScene( scene );
         primaryStage.show();
     }
