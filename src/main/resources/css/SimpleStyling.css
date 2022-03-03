@@ -18,19 +18,13 @@
 -fx-pref-width: 800;
 }
 
-#profileHBox{
+.HBox{
 -fx-background-color: #242424;
--fx-alignment: CENTER;
--fx-pref-height: 100;
--fx-pref-width: 200;
 }
 
 #profileLabel{
 -fx-text-fill: SILVER;
 -fx-font-size: 27px;
--fx-alignment: CENTER;
--fx-pref-height: 75;
--fx-pref-width: 400;
 }
 
 #editProfileButton{
@@ -54,8 +48,6 @@
 -fx-text-fill: SILVER;
 -fx-pref-height: 31;
 -fx-pref-width: 200;
--fx-max-width: MAX_VALUE;
--fx-max-height: fx-pref-height;
 }
 
 #friendsVBox{
@@ -63,16 +55,12 @@
 -fx-pref-height: 500;
 -fx-pref-width: 200;
 -fx-background-color: #363636;
--fx-max-width: fx-pref-width;
--fx-max-height: MAX_VALUE;
 }
 
 #friendsListView{
 -fx-background-color: #484848;
 -fx-pref-width: 200;
 -fx-pref-height: 425;
--fx-max-width: fx-pref-width;
--fx-max-height: MAX_VALUE;
 }
 
 #searchFriendsTextField{
@@ -89,8 +77,6 @@
 -fx-background-color: #242424;
 -fx-pref-width: 200;
 -fx-pref-height: 25;
--fx-max-width: MAX_VALUE;
--fx-max-height: fx-pref-height;
 -fx-text-fill: SILVER;
 -fx-font-size: 12px;
 
@@ -119,23 +105,10 @@
 
 
 
-#firstGameActivityPane{
--fx-pref-width: 200;
--fx-pref-height: 200;
+.Pane{
 -fx-background-color: #606060;
 }
 
-secondGameActivityPane{
--fx-pref-width: 200;
--fx-pref-height: 200;
--fx-background-color: #606060;
-}
-
-thirdGameActivityPane{
--fx-pref-width: 200;
--fx-pref-height: 200;
--fx-background-color: #606060;
-}
 
 
 #commentTextArea{
@@ -160,8 +133,6 @@ thirdGameActivityPane{
 -fx-background-color: #242424;
 -fx-pref-width: 200;
 -fx-pref-height: 25;
--fx-max-width: MAX_VALUE;
--fx-max-height: fx-pref-height;
 -fx-text-fill: SILVER;
 -fx-font-size: 12px;
 }
