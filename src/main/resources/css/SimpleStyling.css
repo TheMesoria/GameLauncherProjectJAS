@@ -1,52 +1,16 @@
 
-
-
-#mainBorderPane{
+.root{
 -fx-background-color: #242424;
 }
 
 #mainHBox{
 -fx-background-color: #121212;
--fx-alignment: CENTER;
 }
 
-#storeButton{
--fx-button-type: RAISED;
+.jfx-button{
 -fx-font-size: 20px;
 -fx-text-fill: SILVER;
--fx-alignment: CENTER;
--fx-pref-height: 25;
--fx-pref-width: 150;
 }
-
-#libraryButton{
--fx-button-type: RAISED;
--fx-font-size: 20px;
--fx-text-fill: SILVER;
--fx-alignment: CENTER;
--fx-pref-height: 25;
--fx-pref-width: 150;
-}
-
-#communityButton{
--fx-button-type: RAISED;
--fx-font-size: 20px;
--fx-text-fill: SILVER;
--fx-alignment: CENTER;
--fx-pref-height: 25;
--fx-pref-width: 150;
-}
-
-#profileButton{
--fx-button-type: RAISED;
--fx-font-size: 20px;
--fx-text-fill: SILVER;
--fx-alignment: CENTER;
--fx-pref-height: 25;
--fx-pref-width: 150;
-}
-
-
 
 #profileBorderPane{
 -fx-background-color: #363636;
