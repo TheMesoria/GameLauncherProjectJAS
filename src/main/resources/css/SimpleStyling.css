@@ -1,5 +1,5 @@
 
-.root{
+root{
 -fx-background-color: #242424;
 }
 
@@ -7,19 +7,27 @@
 -fx-background-color: #121212;
 }
 
+.HBox{
+-fx-background-color: #242424;
+}
+
+#friendsVBox{
+-fx-background-color: #363636;
+}
+
 .jfx-button{
 -fx-font-size: 20px;
 -fx-text-fill: SILVER;
 }
 
-#profileBorderPane{
--fx-background-color: #363636;
--fx-pref-height: 700;
--fx-pref-width: 800;
+.Pane{
+-fx-background-color: #848484;
 }
 
-.HBox{
--fx-background-color: #242424;
+.label{
+-fx-background-color: #363636;
+-fx-font-size: 18px;
+-fx-text-fill: SILVER;
 }
 
 #profileLabel{
@@ -27,112 +35,44 @@
 -fx-font-size: 27px;
 }
 
+#addFriendButton{
+-fx-font-size: 12px;
+-fx-text-fill: SILVER;
+}
+
+#profileBorderPane{
+-fx-background-color: #363636;
+}
+
 #editProfileButton{
 -fx-font-size: 16px;
 -fx-text-fill: SILVER;
--fx-pref-height: 50;
--fx-pref-width: 100;
 }
-
-#profileImage{
--fx-pref-width: 100;
--fx-pref-height: 100;
-}
-
-
 
 #friendsMenuButton{
 -fx-background-color: #363636;
-
 -fx-font-size: 15px;
 -fx-text-fill: SILVER;
--fx-pref-height: 31;
--fx-pref-width: 200;
-}
-
-#friendsVBox{
--fx-alignment: CENTER;
--fx-pref-height: 500;
--fx-pref-width: 200;
--fx-background-color: #363636;
 }
 
 #friendsListView{
 -fx-background-color: #484848;
--fx-pref-width: 200;
--fx-pref-height: 425;
 }
 
-#searchFriendsTextField{
--fx-background-color: #484848;
--fx-pref-width: 200;
--fx-pref-height: 25;
+.text-area{
+-fx-control-inner-background-color: #484848;
+-fx-font-size: 12px;
+-fx-text-fill: SILVER;
+}
 
+.text-field{
+-fx-background-color: #484848;
 -fx-prompt-text-fill: SILVER;
 -fx-text-fill: SILVER;
 }
 
-#addFiendsButton{
--fx-button-type: RAISED;
--fx-background-color: #242424;
--fx-pref-width: 200;
--fx-pref-height: 25;
--fx-text-fill: SILVER;
--fx-font-size: 12px;
-
-}
-
-
-
-.label{
--fx-background-color: #363636;
--fx-alignment: CENTER;
--fx-font-size: 18px;
--fx-text-fill: SILVER;
--fx-pref-width: 600;
--fx-pref-height: 31;
-
-}
-
-
-
-#profileInfoTextArea{
--fx-background-color: #484848;
--fx-pref-width: 478;
--fx-pref-height: 183;
-
-}
-
-
-
-.Pane{
--fx-background-color: #606060;
-}
-
-
-
-#commentTextArea{
--fx-background-color: #484848;
--fx-font-size: 12px;
--fx-text-fill: SILVER;
--fx-pref-width: 600;
--fx-pref-height: 150;
-
-}
-
-#commentTextField{
--fx-background-color: #484848;
--fx-text-fill: SILVER;
--fx-pref-width: 600;
--fx-pref-height:25;
-
-}
-
 #addCommentButton{
--fx-button-type: RAISED;
 -fx-background-color: #242424;
--fx-pref-width: 200;
--fx-pref-height: 25;
 -fx-text-fill: SILVER;
 -fx-font-size: 12px;
 }
