@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="768.0" maxWidth="1366.0" minHeight="768.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="768.0" maxWidth="1366.0" minHeight="768.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0">
+         <left>
+            <Pane fx:id="leftMenuPane" maxHeight="768.0" maxWidth="200.0" minHeight="768.0" minWidth="200.0" prefHeight="768.0" prefWidth="200.0">
+               <BorderPane.margin>
+                  <Insets top="-50.0" />
+               </BorderPane.margin>
+            </Pane>
+         </left>
+         <bottom>
+            <Pane fx:id="bottomPane" maxHeight="350.0" maxWidth="1166.0" minHeight="350.0" minWidth="1166.0" prefHeight="350.0" prefWidth="1166.0" BorderPane.alignment="BOTTOM_RIGHT">
+               <children>
+                  <ImageView fitHeight="350.0" fitWidth="900.0" layoutX="266.0" pickOnBounds="true" preserveRatio="true">
+                     <viewport>
+                        <Rectangle2D height="350.0" width="900.0" />
+                     </viewport>
+                     <image>
+                        <Image url="@fh5.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="playButton" alignment="CENTER" contentDisplay="CENTER" layoutX="980.0" layoutY="163.0" prefHeight="100.0" prefWidth="100.0" text="PLAY" textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color green="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                  </JFXButton>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last played : " textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours played :" textAlignment="CENTER" wrappingWidth="141.2734375">
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </bottom>
+         <center>
+            <HBox fx:id="libraryHBox" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="libraryVBox" prefHeight="368.0" prefWidth="267.0" />
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
