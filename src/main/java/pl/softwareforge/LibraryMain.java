@@ -15,7 +15,7 @@ public class LibraryMain extends Application {
         stage.setTitle("Library");
         stage.setScene(scene);
         stage.resizableProperty().set(false);
-        scene.getStylesheets().add("pl/softwareforge/librarypane/styled.css");
+        scene.getStylesheets().add("/view/styled.css");
         stage.show();
     }
 
