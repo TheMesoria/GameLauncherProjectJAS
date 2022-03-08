@@ -1,4 +1,4 @@
-package pl.softwareforge.librarypane;
+package pl.softwareforge;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ import java.io.IOException;
 public class LibraryMain extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(LibraryMain.class.getResource("librarypane.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(LibraryMain.class.getResource("/view/librarypane.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Library");
         stage.setScene(scene);

@@ -1,4 +1,4 @@
-package pl.softwareforge.librarypane;
+package pl.softwareforge.view;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
