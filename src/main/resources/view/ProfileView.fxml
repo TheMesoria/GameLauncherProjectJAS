@@ -27,7 +27,7 @@
                         <Insets left="5.0" right="5.0" />
                     </HBox.margin>
                 </ImageView>
-                <Label fx:id="profileLabel" alignment="CENTER" prefHeight="86.0" prefWidth="406.0" text="Profile Name" textAlignment="CENTER">
+                <Label fx:id="profileLabel" alignment="CENTER" prefHeight="86.0" prefWidth="406.0" styleClass="profileLabel" text="Profile Name" textAlignment="CENTER">
                     <HBox.margin>
                         <Insets left="5.0" right="5.0" />
                     </HBox.margin>

@@ -11,6 +11,10 @@
     -fx-background-color: #363636;
 }
 
+.profileLabel {
+    -fx-font-size: 24px;
+}
+
 .menu-button {
     -fx-background-color: #363636;
 }
