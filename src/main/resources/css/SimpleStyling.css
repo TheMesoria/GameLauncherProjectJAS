@@ -7,43 +7,35 @@
     -fx-fill: #f0f0f0;
 }
 
-
-
-
-
-#profileLabel {
-    -fx-font-size: 20px;
-}
-
-#centerVBox * {
-    -fx-background-color: #484848;
-}
-
-#centerVBox .Label {
+.Label {
     -fx-background-color: #363636;
-}
-
-.jfx-button {
-    -fx-background-color: #363636;
-}
-
-.ListView {
-    -fx-background-color: #484848;
 }
 
 .menu-button {
     -fx-background-color: #363636;
 }
 
-.menu-item .label {
+.menu-button * {
     -fx-background-color: #363636;
 }
 
-.menu-item:focused {
-    -fx-background-color: #484848;
+.menu-button .menu-item:hover {
+     -fx-background-color: #484848;
 }
 
-.TextField {
+.menu-button .menu-item:hover * {
+     -fx-background-color: #484848;
+}
+
+.menu-button .arrow {
+    -fx-background-color: #f0f0f0;
+}
+
+.text-field {
+    -fx-background-color: #363636;
+}
+
+.text-field * {
     -fx-background-color: #363636;
 }
 
