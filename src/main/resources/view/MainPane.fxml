@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.paint.Color?>
@@ -10,117 +11,140 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.softwareforge.view.MainPaneView">
     <top>
         <HBox fx:id="mainHBox" alignment="CENTER_LEFT" BorderPane.alignment="CENTER">
             <children>
-                <JFXButton fx:id="storeButton" prefHeight="25.0" prefWidth="150.0" text="Store">
+                <JFXButton fx:id="storeButton" onMouseClicked="#onMouseClicked" prefHeight="25.0" prefWidth="150.0"
+                           text="Store">
                     <ripplerFill>
-                        <LinearGradient endX="0.46445497630331756" endY="0.7345971563981043" startX="0.6018957345971564" startY="0.6018957345971564">
+                        <LinearGradient endX="0.46445497630331756" endY="0.7345971563981043" startX="0.6018957345971564"
+                                        startY="0.6018957345971564">
                             <stops>
                                 <Stop>
                                     <color>
-                                        <Color red="0.21176470816135406" green="0.21176470816135406" blue="0.21176470816135406" />
+                                        <Color red="0.21176470816135406" green="0.21176470816135406"
+                                               blue="0.21176470816135406"/>
                                     </color>
                                 </Stop>
                                 <Stop offset="1.0">
                                     <color>
-                                        <Color red="0.3764705955982208" green="0.3764705955982208" blue="0.3764705955982208" />
+                                        <Color red="0.3764705955982208" green="0.3764705955982208"
+                                               blue="0.3764705955982208"/>
                                     </color>
                                 </Stop>
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
                     <HBox.margin>
-                        <Insets left="5.0" right="5.0" />
+                        <Insets left="5.0" right="5.0"/>
                     </HBox.margin>
                     <font>
-                        <Font size="18.0" />
+                        <Font size="18.0"/>
                     </font>
                 </JFXButton>
-                <JFXButton fx:id="libraryButton" prefHeight="25.0" prefWidth="150.0" text="Library">
+                <JFXButton fx:id="libraryButton" onMouseClicked="#onMouseClicked" prefHeight="25.0" prefWidth="150.0"
+                           text="Library">
                     <ripplerFill>
-                        <LinearGradient endX="0.6303317535545023" endY="0.7535545023696683" startX="0.6350710900473934" startY="0.2369668246445497">
+                        <LinearGradient endX="0.6303317535545023" endY="0.7535545023696683" startX="0.6350710900473934"
+                                        startY="0.2369668246445497">
                             <stops>
                                 <Stop>
                                     <color>
-                                        <Color red="0.21176470816135406" green="0.21176470816135406" blue="0.21176470816135406" />
+                                        <Color red="0.21176470816135406" green="0.21176470816135406"
+                                               blue="0.21176470816135406"/>
                                     </color>
                                 </Stop>
                                 <Stop offset="1.0">
                                     <color>
-                                        <Color red="0.3764705955982208" green="0.3764705955982208" blue="0.3764705955982208" />
+                                        <Color red="0.3764705955982208" green="0.3764705955982208"
+                                               blue="0.3764705955982208"/>
                                     </color>
                                 </Stop>
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
                     <HBox.margin>
-                        <Insets left="5.0" right="5.0" />
+                        <Insets left="5.0" right="5.0"/>
                     </HBox.margin>
                     <font>
-                        <Font size="18.0" />
+                        <Font size="18.0"/>
                     </font>
                 </JFXButton>
-                <JFXButton fx:id="communityButton" prefHeight="25.0" prefWidth="150.0" text="Community">
+                <JFXButton fx:id="communityButton" onMouseClicked="#onMouseClicked" prefHeight="25.0" prefWidth="150.0"
+                           text="Community">
                     <ripplerFill>
-                        <LinearGradient endX="0.10900473933649286" endY="0.6966824644549764" startX="0.10900473933649289" startY="0.3033175355450237">
+                        <LinearGradient endX="0.10900473933649286" endY="0.6966824644549764"
+                                        startX="0.10900473933649289" startY="0.3033175355450237">
                             <stops>
                                 <Stop>
                                     <color>
-                                        <Color red="0.3764705955982208" green="0.3764705955982208" blue="0.3764705955982208" />
+                                        <Color red="0.3764705955982208" green="0.3764705955982208"
+                                               blue="0.3764705955982208"/>
                                     </color>
                                 </Stop>
                                 <Stop offset="0.007662835249042145">
                                     <color>
-                                        <Color red="0.3764705955982208" green="0.3764705955982208" blue="0.3764705955982208" />
+                                        <Color red="0.3764705955982208" green="0.3764705955982208"
+                                               blue="0.3764705955982208"/>
                                     </color>
                                 </Stop>
                                 <Stop offset="1.0">
                                     <color>
-                                        <Color red="0.21176470816135406" green="0.21176470816135406" blue="0.21176470816135406" />
+                                        <Color red="0.21176470816135406" green="0.21176470816135406"
+                                               blue="0.21176470816135406"/>
                                     </color>
                                 </Stop>
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
                     <HBox.margin>
-                        <Insets left="5.0" right="5.0" />
+                        <Insets left="5.0" right="5.0"/>
                     </HBox.margin>
                     <font>
-                        <Font size="18.0" />
+                        <Font size="18.0"/>
                     </font>
                 </JFXButton>
-                <JFXButton fx:id="profileButton" prefHeight="25.0" prefWidth="150.0" text="Profile" HBox.hgrow="ALWAYS">
+                <JFXButton fx:id="profileButton" onMouseClicked="#onMouseClicked" prefHeight="25.0" prefWidth="150.0"
+                           text="Profile" HBox.hgrow="ALWAYS">
                     <ripplerFill>
-                        <LinearGradient endX="0.8104265402843601" endY="0.6398104265402844" startX="0.6066350710900474" startY="0.3601895734597157">
+                        <LinearGradient endX="0.8104265402843601" endY="0.6398104265402844" startX="0.6066350710900474"
+                                        startY="0.3601895734597157">
                             <stops>
                                 <Stop>
                                     <color>
-                                        <Color red="0.21176470816135406" green="0.21176470816135406" blue="0.21176470816135406" />
+                                        <Color red="0.21176470816135406" green="0.21176470816135406"
+                                               blue="0.21176470816135406"/>
                                     </color>
                                 </Stop>
                                 <Stop offset="1.0">
                                     <color>
-                                        <Color red="0.3764705955982208" green="0.3764705955982208" blue="0.3764705955982208" />
+                                        <Color red="0.3764705955982208" green="0.3764705955982208"
+                                               blue="0.3764705955982208"/>
                                     </color>
                                 </Stop>
                             </stops>
                         </LinearGradient>
                     </ripplerFill>
                     <HBox.margin>
-                        <Insets left="5.0" right="5.0" />
+                        <Insets left="5.0" right="5.0"/>
                     </HBox.margin>
                     <font>
-                        <Font size="18.0" />
+                        <Font size="18.0"/>
                     </font>
                 </JFXButton>
-                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true"
+                           HBox.hgrow="ALWAYS">
                     <HBox.margin>
-                        <Insets left="5.0" right="5.0" />
+                        <Insets left="5.0" right="5.0"/>
                     </HBox.margin>
                 </ImageView>
             </children>
         </HBox>
     </top>
+    <center>
+        <AnchorPane fx:id="contentPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
+    </center>
 </BorderPane>
