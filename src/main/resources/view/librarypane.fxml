@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -58,12 +59,12 @@
                         </RadialGradient>
                      </ripplerFill>
                   </JFXButton>
-                  <Text fill="WHITE" layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last played : " textAlignment="CENTER">
+                  <Text fill="#8c8c8c" layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last played : " textAlignment="CENTER">
                      <font>
                         <Font name="Calibri" size="24.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours played :" textAlignment="CENTER" wrappingWidth="141.2734375">
+                  <Text fill="#8c8c8c" layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours played :" textAlignment="CENTER" wrappingWidth="141.2734375">
                      <font>
                         <Font name="Calibri" size="24.0" />
                      </font>
@@ -74,7 +75,54 @@
          <center>
             <HBox fx:id="libraryHBox" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <VBox fx:id="libraryVBox" prefHeight="368.0" prefWidth="267.0" />
+                  <VBox fx:id="libraryVBox" prefHeight="368.0" prefWidth="267.0">
+                     <children>
+                        <TextField promptText="Search...">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Text fill="#8c8c8c" strokeType="OUTSIDE" strokeWidth="0.0" text="Game placeholder1" wrappingWidth="267.73670959472656">
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#8c8c8c" layoutX="10.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game placeholder1" wrappingWidth="267.73670959472656">
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#8c8c8c" layoutX="10.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game placeholder1" wrappingWidth="267.73670959472656">
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#8c8c8c" layoutX="10.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game placeholder1" wrappingWidth="267.73670959472656">
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="#8c8c8c" layoutX="10.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game placeholder1" wrappingWidth="267.73670959472656">
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children></VBox>
                </children>
             </HBox>
          </center>
