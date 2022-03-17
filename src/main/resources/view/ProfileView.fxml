@@ -19,8 +19,7 @@
 <?import javafx.scene.paint.Stop?>
 
 <BorderPane fx:id="profileBorderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-            minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0"
-            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="pl.softwareforge.controller.ProfileViewController">
     <top>
         <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="800.0" BorderPane.alignment="CENTER_LEFT">

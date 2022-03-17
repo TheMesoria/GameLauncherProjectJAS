@@ -9,6 +9,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -16,67 +17,41 @@ public class MainPaneView
         implements Initializable {
 
 
-    @FXML public AnchorPane contentPane;
+    @FXML public AnchorPane contentAnchorPane;
     @FXML private BorderPane mainBorderPane, profileBorderPane;
     @FXML private JFXButton storeButton;
     @FXML private JFXButton libraryButton;
     @FXML private JFXButton communityButton;
     @FXML private JFXButton profileButton;
 
-    int previous = 0;
-    boolean viewLoaded = false;
-
-    @Override
-    public void initialize(URL location,
+    @Override public void initialize(URL location,
                            ResourceBundle resources) {
-        contentPane.getChildren().clear();
 
-        System.out.println("No issues in initialize!");
+        contentAnchorPane.getChildren().clear();
+
     }
 
-    @FXML
-    void onMouseClicked(MouseEvent event) {
+    @FXML void onMouseClicked(MouseEvent event) throws IOException {
 
-
-        if (event.getSource() == profileButton && !viewLoaded) {
+        if (event.getSource() == profileButton)
+        {
             loadView();
-
-            contentPane.setVisible(true);
-        } else if (event.getSource() == storeButton) {
-            previous++;
-            loadView();
-        } else {
-            viewLoaded = false;
-            contentPane.getChildren().clear();
         }
 
     }
 
-    private void loadView() {
-        try {
-            var fxmlLoader = new FXMLLoader(getClass().getResource("/view/ProfileView.fxml"));
-            Parent root = fxmlLoader.load();
+    private void loadView() throws IOException {
 
-            AnchorPane.setBottomAnchor(root, 0.0);
-            AnchorPane.setTopAnchor(root, 0.0);
-            AnchorPane.setLeftAnchor(root, 0.0);
-            AnchorPane.setRightAnchor(root, 0.0);
+        var fxmlLoader = new FXMLLoader(getClass().getResource("/view/ProfileView.fxml"));
+        Parent root = fxmlLoader.load();
 
-            root.getStylesheets().add("/css/SimpleStyling.css");
-            if (previous % 3 == 0) {
-                root.getStylesheets().add("");
-            } else if (previous % 3 == 1) {
-                root.getStylesheets().add("");
-            } else if (previous % 3 == 2) {
-                root.getStylesheets().add("");
-            }
+        AnchorPane.setTopAnchor(root,0d);
+        AnchorPane.setRightAnchor(root,0d);
+        AnchorPane.setBottomAnchor(root,0d);
+        AnchorPane.setLeftAnchor(root,0d);
 
-            contentPane.getChildren().clear();
-            contentPane.getChildren().add(root);
-
-            viewLoaded = true;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        contentAnchorPane.getChildren().clear();
+        contentAnchorPane.getChildren().add(root);
     }
+
 }

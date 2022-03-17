@@ -145,6 +145,6 @@
         </HBox>
     </top>
     <center>
-        <AnchorPane fx:id="contentPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
+        <AnchorPane fx:id="contentAnchorPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER"/>
     </center>
 </BorderPane>
