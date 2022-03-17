@@ -38,6 +38,8 @@ public class MainPaneView
             loadView();
         }
 
+        else { contentAnchorPane.getChildren().clear(); }
+
     }
 
     private void loadView() throws IOException {
