@@ -1,122 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <Pane fx:id="leftBorderPane" prefHeight="768.0" prefWidth="220.0" BorderPane.alignment="CENTER">
          <children>
-            <JFXButton fx:id="shopButton" layoutY="50.0" minWidth="220.0" text="Shop" textFill="WHITE">
+            <MFXButton layoutY="60.0" prefHeight="40.0" prefWidth="220.0" rippleColor="LIME" rippleRadius="50.0" style="-fx-background-color: transparent;" text="Shop" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+            </MFXButton>
+            <MFXButton layoutY="120.0" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Library" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
-               <ripplerFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="0.3868827223777771" green="1.0" blue="0.36574074625968933" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color green="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </ripplerFill>
-            </JFXButton>
-            <JFXButton fx:id="libraryButton" layoutY="100.0" minWidth="220.0" text="Library" textFill="WHITE">
+            </MFXButton>
+            <MFXButton layoutY="180.0" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Inventory" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
-               <ripplerFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color green="1.0" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color green="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </ripplerFill>
-            </JFXButton>
-            <JFXButton fx:id="inventoryButton" layoutY="150.0" minWidth="220.0" text="Inventory" textFill="WHITE">
+            </MFXButton>
+            <MFXButton layoutY="240.0" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Account" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
-               <ripplerFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color green="1.0" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color green="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </ripplerFill>
-            </JFXButton>
-            <JFXButton fx:id="accountButton" layoutY="200.0" minWidth="220.0" text="Account" textFill="WHITE">
+            </MFXButton>
+            <MFXButton layoutY="718.0" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Settings" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
-               <ripplerFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color green="1.0" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color green="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </ripplerFill>
-            </JFXButton>
-            <JFXButton fx:id="settingsButton" layoutY="720.0" prefHeight="51.0" prefWidth="220.0" text="Settings" textFill="WHITE">
-               <font>
-                  <Font size="24.0" />
-               </font>
-               <ripplerFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color red="0.3868827223777771" green="1.0" blue="0.36574074625968933" />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color green="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </ripplerFill>
-            </JFXButton>
+            </MFXButton>
          </children>
       </Pane>
    </left>
