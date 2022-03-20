@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
 <?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
 <?import io.github.palexdev.materialfx.controls.MFXTextField?>
 <?import javafx.geometry.Insets?>
@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
@@ -387,16 +388,6 @@
             </MFXScrollPane>
          </children>
       </VBox>
-      <JFXButton layoutX="355.0" layoutY="344.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #00ff00;" text="PLAY" textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </JFXButton>
-      <JFXButton layoutX="496.0" layoutY="344.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #424242;" text="Game Page" textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </JFXButton>
       <Text fill="WHITE" layoutX="356.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Real Driving Simulator XD" wrappingWidth="400.33087158203125">
          <font>
             <Font name="Calibri" size="32.0" />
@@ -449,5 +440,31 @@
             </Text>
          </children>
       </VBox>
+      <MFXButton alignment="CENTER" layoutX="355.0" layoutY="355.0" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #00ff00;" text="PLAY" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+         <rippleColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.05000000074505806" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7518518567085266" green="1.0" blue="0.7890740633010864" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </rippleColor>
+      </MFXButton>
+      <MFXButton alignment="CENTER" layoutX="493.0" layoutY="355.0" prefHeight="40.0" prefWidth="125.0" rippleColor="WHITE" style="-fx-background-color: #727272;" text="INFO" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </MFXButton>
    </children>
 </AnchorPane>
