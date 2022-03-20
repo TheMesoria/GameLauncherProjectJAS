@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
@@ -39,24 +38,6 @@
       </Pane>
    </left>
    <center>
-      <Pane fx:id="rightPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <JFXButton layoutX="918.0" layoutY="-8.0" text="_" textFill="#fffefe">
-               <font>
-                  <Font size="36.0" />
-               </font>
-            </JFXButton>
-            <JFXButton layoutX="996.0" text="▢" textFill="#fffefe">
-               <font>
-                  <Font size="36.0" />
-               </font>
-            </JFXButton>
-            <JFXButton layoutX="1075.0" layoutY="13.0" text="X" textFill="WHITE">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </JFXButton>
-         </children>
-      </Pane>
+      <Pane fx:id="rightPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>
