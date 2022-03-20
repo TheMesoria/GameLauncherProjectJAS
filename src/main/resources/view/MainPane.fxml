@@ -5,31 +5,31 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.softwareforge.view.MainPaneView">
    <left>
       <Pane fx:id="leftBorderPane" prefHeight="768.0" prefWidth="220.0" BorderPane.alignment="CENTER">
          <children>
-            <MFXButton layoutY="60.0" prefHeight="40.0" prefWidth="220.0" rippleColor="LIME" rippleRadius="50.0" style="-fx-background-color: transparent;" text="Shop" textAlignment="CENTER" textFill="WHITE">
+            <MFXButton fx:id="buttonShop" layoutY="60.0" onMouseClicked="#openShop" prefHeight="40.0" prefWidth="220.0" rippleColor="LIME" rippleRadius="50.0" style="-fx-background-color: transparent;" text="Shop" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Calibri" size="24.0" />
                </font>
             </MFXButton>
-            <MFXButton layoutY="120.0" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Library" textAlignment="CENTER" textFill="WHITE">
+            <MFXButton fx:id="buttonLibrary" layoutY="120.0" onMouseClicked="#openLibrary" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Library" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
             </MFXButton>
-            <MFXButton layoutY="180.0" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Inventory" textAlignment="CENTER" textFill="WHITE">
+            <MFXButton fx:id="buttonInventory" layoutY="180.0" onMouseClicked="#openInventory" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Inventory" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
             </MFXButton>
-            <MFXButton layoutY="240.0" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Account" textAlignment="CENTER" textFill="WHITE">
+            <MFXButton fx:id="buttonAccount" layoutY="240.0" onMouseClicked="#openAccount" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Account" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
             </MFXButton>
-            <MFXButton layoutY="718.0" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Settings" textAlignment="CENTER" textFill="WHITE">
+            <MFXButton fx:id="buttonSettings" layoutY="718.0" onMouseClicked="#openSettings" prefWidth="220.0" rippleColor="LIME" style="-fx-background-color: transparent;" text="Settings" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
@@ -38,6 +38,6 @@
       </Pane>
    </left>
    <center>
-      <Pane fx:id="rightPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <Pane fx:id="middlePane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>
